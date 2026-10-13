@@ -130,8 +130,8 @@ li {
 }
 
 .brand {
-  font-family: var(--font-bold);
-  font-weight: 800;
+  font-family: var(--font-body);
+  font-weight: 500;
   font-size: 1.15rem;
   text-decoration: none;
   color: var(--ink);
@@ -192,13 +192,30 @@ li {
 /* ---------- Hero ---------- */
 
 .hero {
+  position: relative;
   padding: 6rem var(--gutter) 5rem;
   background: url("images/hero-background.jpeg") center / cover no-repeat;
   background-attachment: scroll;
 }
 
+.hero__logo {
+  display: block;
+  width: 140px;
+  height: auto;
+  margin-top: 3rem;
+}
+
+@media (max-width: 540px) {
+  .hero__logo {
+    width: 96px;
+  }
+  .hero__tagline {
+    font-size: 1rem;
+  }
+}
+
 .hero__inner {
-  max-width: 640px;
+  max-width: none;
   margin: 0;
 }
 
@@ -213,12 +230,15 @@ li {
 }
 
 .hero h1 {
+  font-family: var(--font-body);
+  font-weight: 500;
   font-size: clamp(3rem, 8vw, 6rem);
   color: var(--ink);
 }
 
 .hero__tagline {
-  font-size: 1.1rem;
+  max-width: 640px;
+  font-size: 1.5rem;
   color: var(--gray-light);
 }
 
@@ -243,6 +263,16 @@ li {
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(6px); }
+}
+
+.hero-disclaimer {
+  margin: 0;
+  padding: 0.6rem var(--gutter);
+  background: var(--offwhite);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--gray-light);
 }
 
 /* ---------- Table of contents ---------- */
@@ -453,17 +483,28 @@ li {
   padding: 5rem var(--gutter);
 }
 
-.project__media img {
+.project__content {
+  order: 1;
+}
+
+.project__media {
+  position: relative;
+  order: 2;
+}
+
+.project__media img:not(.project__salesforce-badge) {
   width: 100%;
   border-radius: 14px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-  border: 1px solid var(--line);
 }
 
 .project__salesforce-badge {
-  width: 140px;
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 110px;
   height: auto;
-  margin-top: 1.75rem;
+  border-radius: 50%;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
 }
 
 .project__content h2 {
@@ -519,6 +560,11 @@ li {
   .project__columns {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .project__salesforce-badge {
+    width: 80px;
+    top: -1rem;
+    right: -1rem;
   }
 }
 
