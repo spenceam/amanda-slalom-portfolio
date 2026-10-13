@@ -14,7 +14,7 @@
   --card-bg: #ffffff;
 
   --font-body: "Average Sans", "Helvetica Neue", Arial, sans-serif;
-  --font-bold: "Avenir Next", "Avenir", "Average Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-bold: "Average Sans", "Helvetica Neue", Arial, sans-serif;
 
   --gutter: clamp(1.5rem, 5vw, 4rem);
   --header-height: 72px;
@@ -39,7 +39,7 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-bold);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
   margin: 0 0 0.5em;
 }
@@ -144,7 +144,7 @@ li {
 
 .primary-nav a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   color: var(--ink);
 }
