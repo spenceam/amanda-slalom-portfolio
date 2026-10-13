@@ -1,0 +1,5 @@
+/ PLAN
+I want to create a simple portfolio website to share internally and with prospective clients. This link will be used to briefly explain my past client projects and provide brief visuals. I'd like for it it be a single scroll page with anchor links to move back and forth from the table of contents section. Use the uploaded slide-deck.pdf as inspiration. Do not change any of the content or images. I've added them to the /images folder. Do not name any of the clients unless it is explicitly called out in the content. Keep a similar look and feel. Make the site a full width but responsive. Keep a similar look and feel to the slides. 
+
+// DESIGN
+Use simple icons from Material Design and the Google Font Average Sans for most of the text. For the text that needs a bolder font weight, use Avenir medium or black weights.
