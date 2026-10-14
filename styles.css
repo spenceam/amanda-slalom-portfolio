@@ -238,7 +238,7 @@ li {
 }
 
 .hero h1 {
-  font-family: var(--font-body);
+  font-family: var(--font-bold);
   font-weight: 500;
   font-size: clamp(3rem, 8vw, 6rem);
   color: var(--ink);
